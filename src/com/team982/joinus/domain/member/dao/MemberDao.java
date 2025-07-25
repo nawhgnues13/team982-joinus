@@ -96,4 +96,24 @@ public class MemberDao {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	// 아이디로 회원 이름 조회
+	public String getMemberNameById(int memberId) {
+		try (Connection con = dataSource.getConnection()) {
+			String sql = "SELECT member_name "
+					+ "FROM member "
+					+ "WHERE member_id=?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1, memberId);
+			ResultSet rs = stmt.executeQuery();
+			if (rs.next()) {
+				return rs.getString("member_name");
+			} else {
+				return "";
+			}
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+			throw new RuntimeException(e);
+		}
+	}
 }
