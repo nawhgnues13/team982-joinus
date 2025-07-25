@@ -18,7 +18,7 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
   
-  <filter>
+<!--   <filter>
 	<filter-name>AuthenticationFilter</filter-name>
 	<filter-class>com.team982.joinus.global.filter.AuthenticationFilter</filter-class>
   </filter>
@@ -29,7 +29,7 @@
   <filter-mapping>
 	<filter-name>AuthenticationFilter</filter-name>
 	<url-pattern>/club/*</url-pattern>
-  </filter-mapping>
+  </filter-mapping> -->
   
   <servlet>
     <servlet-name>DispatcherServlet</servlet-name>
