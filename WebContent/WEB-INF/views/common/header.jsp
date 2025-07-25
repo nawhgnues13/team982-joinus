@@ -15,7 +15,7 @@
         <li><a href="#" class="nav-link px-2">About</a></li>
     </ul> -->
     <div class="col-md-3 text-end me-5">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+        <!-- <button type="button" class="btn btn-outline-primary me-2">Login</button> -->
+        <button type="button" class="btn btn-primary" onclick="location.href='/member/logout.do'">Logout</button>
     </div>
 </header>

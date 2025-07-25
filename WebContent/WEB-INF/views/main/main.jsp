@@ -8,14 +8,14 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <c:import url="./common/header.jsp"/>
+        <c:import url="/WEB-INF/views/common/header.jsp"/>
         <div class="d-flex">
-	        <c:import url="./common/sidebar.jsp"/>
+	        <c:import url="/WEB-INF/views/common/sidebar.jsp"/>
 	        <div class="w-100">
 		        <div class="./container mt-5">
 		            main<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>		        
 		        </div>
-        		<c:import url="./common/footer.jsp"/>
+        		<c:import url="/WEB-INF/views/common/footer.jsp"/>
 	        </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
